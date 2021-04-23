@@ -11,18 +11,23 @@
           <ion-title size="large">Tab 1</ion-title>
         </ion-toolbar>
       </ion-header>
-    
+    <ion-button @click="router.push('/page1')" expand="block">Push to Page 1</ion-button>
       <ExploreContainer name="Tab 1 page" />
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
+import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent,IonButton } from '@ionic/vue';
 import ExploreContainer from '@/components/ExploreContainer.vue';
+import { useRouter } from 'vue-router';
 
 export default  {
   name: 'Tab1',
-  components: { ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
+  components: { ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage,IonButton },
+  setup() {
+    const router = useRouter()
+    return {router}
+  }
 }
 </script>
