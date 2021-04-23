@@ -25,7 +25,7 @@ After that, I created a button which uses `@click` to triggers the `router.push(
 
 Here is a digram explaning the way this bug might be triggered
 
-![Untitled Diagram 2](https://user-images.githubusercontent.com/13176782/115821996-62572680-a436-11eb-99ef-27ad8819a758.png)
+![Untitled Diagram 2](https://user-images.githubusercontent.com/13176782/115822065-7ef35e80-a436-11eb-879f-248fa2e70650.png)
 
 
 A record creared by using a Mac screen recorder which shows how to repoduce the bug:
