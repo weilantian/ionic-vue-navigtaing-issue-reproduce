@@ -8,6 +8,17 @@ Here is the repo I created by using the command
 ionic start navigatingIssue tabs
 ```
 
+
+After that, I configured the app in main.ts to use only iOS theme in order to reproduce this bug in the Chrome on my Mac.
+
+```
+const app = createApp(App)
+  .use(IonicVue,{
+    mode: 'ios'
+  })
+  .use(router);
+```
+
 And I created two blanks pages with `<ion-page>`tag, and I have configured the router to point one page to `/page1`, another to `/page2`
 
 After that, I created a button which uses `@click` to triggers the `router.push()` 
